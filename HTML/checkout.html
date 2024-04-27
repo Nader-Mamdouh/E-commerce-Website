@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminous</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;500&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/product_details.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav-bar">
+        <li><a href="#">Watches</a></li>
+        <li><a href="#">Eyewear</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <span class="search-icon"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></span>
+      <a style="text-decoration: none; color: #333333" href="Login.html">
+        <div class="user-icon">
+          <span><i class="fa-regular fa-user"></i></span>
+          <p>Login</p>
+        </div>
+      </a>
+      <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+    </div>
+    <div class="phases">
+      <div class="checkout-phase">
+        <i class="fa-solid fa-cash-register"></i>
+        <p>1.Checkout</p>
+      </div>
+      <div class="payment-phase">
+        <i class="fa-solid fa-money-check-dollar"></i>
+        <p>2.Payment</p>
+      </div>
+      <div class="confirmation-phase">
+        <i class="fa-solid fa-list-check"></i>
+        <p>3.Confirmation</p>
+      </div>
+    </div>
+    <div class="checkout-details d-flex gap-4 justify-content-center mb-5">
+      <div>
+        <div class="order-details bg-white px-4 pt-4" style="height: 50%">
+          <h2 class="mb-4">Detail Order</h2>
+          <div class="d-flex" style="border-bottom: solid 2px #777">
+            <div style="margin-right: 30px">
+              <p>Subtotal</p>
+              <p>Shipping Cost</p>
+              <p>Promo Code</p>
+              <p>Packaging</p>
+            </div>
+            <div>
+              <p>EGP 2.152.000</p>
+              <p>EGP 500.000</p>
+              <p>Must2024</p>
+              <p>EGP 50.000</p>
+            </div>
+          </div>
+          <div class="grand-price d-flex justify-content-between pt-3">
+            <p>Grand Total</p>
+            <p>EGP 2700.000</p>
+          </div>
+        </div>
+        <a href="payment.html"
+          ><button class="place-orderbtn">Place my order</button></a
+        >
+        <a href="index.html"
+          ><button class="shoppingbtn">Continue shopping</button></a
+        >
+      </div>
+      <form class="billing-address bg-white p-4">
+        <h2 class="mb-4">Billing Address</h2>
+        <div class="mb-3">
+          <label for="full-name" style="font-size: 13px; margin-bottom: 0"
+            >Full Name:</label
+          >
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            placeholder="EX: Rasyidin Arsyad Nasution"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" style="font-size: 13px; margin-bottom: 0"
+            >Email Address</label
+          >
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Ex: rasyid.arsyad@gmail.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" style="font-size: 13px; margin-bottom: 0"
+            >Phone Number:</label
+          >
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Ex: +201099996666"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label
+            for="shipping-address"
+            style="font-size: 13px; margin-bottom: 0"
+            >Shipping Address</label
+          >
+          <input
+            type="text"
+            id="shipping-address"
+            name="shipping-address"
+            placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="country" style="font-size: 13px; margin-bottom: 0"
+            >Country</label
+          >
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="EX: Egypt"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="state" style="font-size: 13px; margin-bottom: 0"
+            >State</label
+          >
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="EX: Cairo"
+            required
+          />
+        </div>
+        <div class="d-flex" style="gap: 10px">
+          <div class="mb-3">
+            <label for="city" style="font-size: 13px; margin-bottom: 0"
+              >City</label
+            >
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="EX: Nasr City"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="zip-code" style="font-size: 13px; margin-bottom: 0"
+              >Zip code</label
+            >
+            <input
+              type="text"
+              id="zip-code"
+              name="zip-code"
+              placeholder="EX: 12034"
+              required
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- start footer -->
+    <footer style="background-color: #404436">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="info">
+              <h1>Luminous</h1>
+              <p class="text-light text-white-50 mb-5">
+                Luminous is an online store based in Egypt that focuses on
+                high-quality, handcrafted goods. Instead of your typical mix of
+                products, Luminous specializes in luxury items.
+              </p>
+              <div class="copyright text-light text-white-50 mb-3">
+                <div>
+                  Created By
+                  <span style="color: var(--green-color)">NMSK</span>
+                </div>
+                <div>
+                  © 2024 -
+                  <span style="color: var(--yellow-color)">Bondi Inc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 text-light pt-5">
+            <h5>Links</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">Home</li>
+              <li class="mb-2">Our Services</li>
+              <li class="mb-2">Portfolio</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 text-light pt-5">
+            <h5>About Us</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">About Us</li>
+              <li class="mb-2">Blog</li>
+              <li class="mb-2">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 pt-5">
+            <h5 class="text-light">Contact Us</h5>
+            <p class="lh-lg text-white-50 mb-5">
+              Get in touch with us via mail phone.We are waiting for your call
+              or message
+            </p>
+            <a href="" class="btn main-btn rounded-pill w-100"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>
